@@ -14,13 +14,13 @@
     
     <!-- Header -->
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
             <div class="container-fluid">
 
                 <!--Logo-->
-                <div class="col-lg-1 col-md-1 col-4 d-flex align-items-cente justify-content-center">
-                    <a class="navbar-brand logo" href="../index.html">
-                        <img src="../Img/logo.png" alt="Logo" width="40" height="34">
+                <div class="col-lg-1 col-md-1 col-4 d-flex align-items-center justify-content-center">
+                    <a class="navbar-brand" href="#">
+                        <img src="./Img/logo.png" alt="Logo" width="40" height="34">
                     </a>
                 </div>
 
@@ -36,17 +36,17 @@
                         <!--Menú-->
                         <ul class="navbar-nav col-lg-2 col-md-12 text-lg-start text-center">
                             <li class="nav-item">
-                                <a class="nav-link active" href="../index.html">Inicio</a>
+                                <a class="nav-link active" href="#">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Tips</a>
+                                <a class="nav-link" href="./Pages/tips.html">Tips</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nosotros</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="./nosotros.html">Sobre Nosotros</a></li>
+                                    <li><a class="dropdown-item" href="./Pages/nosotros.html">Sobre Nosotros</a></li>
                                     <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="./contacto.html">Contactanos</a></li>
+                                    <li><a class="dropdown-item" href="./Pages/contacto.html">Contactanos</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -54,13 +54,14 @@
                         <!--Formulario de búsqueda-->
                         <form class="d-flex col-lg-8 col-md-12 justify-content-lg-end justify-content-center" role="search">
                             <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                            <button class="btn btn-primary" type="submit">Buscar</button>
+                            <button class="btn btn-outline-dark" type="submit">Buscar</button>
                         </form>
 
                         <!--My Account-->
                         <div class="col-lg-2 col-md-2 col-4 d-flex justify-content-center align-items-center">
-                            <a class="icon-link myaccount" href="./sesion.html">
-                                <i class="bi bi-person-circle"></i> My Account
+                            <a class="icon-link" href="./Pages/sesion.html">
+                                <i class="bi bi-person-circle"></i>
+                                <span>My Account</span>
                             </a>
                         </div>
                     </div>
@@ -139,28 +140,41 @@
     </div>
     
     <footer>
-        <div class="contenedor">
-            <div>
-                <img src="../Img/logo.png" alt="logo">
-            </div>
-            <div class="menu">
-                <a href="index.html">Inicio</a>
-                <a href="tips.html">Tips</a>
-                <a href="nosotros.html">Sobre Nosotros</a>
-                <a href="contacto.html">Contactanos</a>
-                <a href="sesion.html">Iniciar Sesión</a>
+        <div class="container-fluid bg-body-tertiary">
+            <div class="row">
+
+                <div class="d-flex justify-content-between align-items-center">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="#">
+                        <img src="./Img/logo.png" alt="Logo" width="40" height="34">
+                    </a>
+                
+                    <!-- Menu -->
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-body-secondary">Inicio</a></li>
+                        <li class="nav-item"><a href="./Pages/tips.html" class="nav-link px-2 text-body-secondary">Tips</a></li>
+                        <li class="nav-item"><a href="./Pages/nosotros.html" class="nav-link px-2 text-body-secondary">Sobre Nosotros</a></li>
+                        <li class="nav-item"><a href="./Pages/contacto.html" class="nav-link px-2 text-body-secondary">Contactanos</a></li>
+                    </ul>
+                </div>
+
+                <hr>
+                
+                <div class="d-flex justify-content-between">
+                    <!-- Derechos -->
+                    <p class="col-md-4 mb-0 text-body-secondary">© 2025 Cocinando Ando</p>
+    
+                    <!-- Redes -->
+                    <ul class="col-1 d-flex justify-content-evenly list-unstyled">
+                        <li><i class="bi bi-youtube"></i></li>
+                        <li><i class="bi bi-twitter-x"></i></li>
+                        <li><i class="bi bi-instagram"></i></li>
+                    </ul>
+                </div>
+
             </div>
         </div>
-        
-        <hr>
-
-        <div class="contenedor">
-            <div>
-                <p>Cocinando Ando @2025. All rights reserved</p>
-            </div>
-        </div>
-
-    </footer>
+     </footer>
     
 </body>
 
