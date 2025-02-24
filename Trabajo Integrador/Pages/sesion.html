@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+
+                <!--Logo-->
+                <div class="col-lg-1 col-md-1 col-4 d-flex align-items-cente justify-content-center">
+                    <a class="navbar-brand logo" href="../index.html">
+                        <img src="../Img/logo.png" alt="Logo" width="40" height="34">
+                    </a>
+                </div>
+
+                <!--Botón colapsable-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Contenido colapsable -->
+                <div class="collapse navbar-collapse col-lg-11 col-md-11 col-12 justify-content-around" id="navbarContent">
+                    <div class="row w-100 d-flex justify-content-around">
+
+                        <!--Menú-->
+                        <ul class="navbar-nav col-lg-2 col-md-12 text-lg-start text-center">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./tips.html">Tips</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nosotros</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./nosotros.html">Sobre Nosotros</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="./contacto.html">Contactanos</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <!--Formulario de búsqueda-->
+                        <form class="d-flex col-lg-8 col-md-12 justify-content-lg-end justify-content-center" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                            <button class="btn btn-primary" type="submit">Buscar</button>
+                        </form>
+
+                        <!--My Account-->
+                        <div class="col-lg-2 col-md-2 col-4 d-flex justify-content-center align-items-center">
+                            <a class="icon-link myaccount" href="#">
+                                <i class="bi bi-person-circle"></i> My Account
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="sesion">
+        <div>
+            <h1>Iniciar Sesión</h1>
+            
+            <form>
+                <label>Nombre de Usuario</label>
+                <input type="text" placeholder="ejemplo@url.com">
+
+                <label>Contraseña</label>
+                <input type="password">
+
+                <input id="ingresar" class="primario" type="submit" value="Enviar">
+
+                <hr>
+
+                <h3>Ingresar con</h3>
+
+                <button class="secundario">Google</button>
+                <button class="secundario">Facebook</button>
+                <button class="secudnario">Apple</button>
+
+                <hr>
+
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="contenedor">
+            <div>
+                <img src="../Img/logo.png" alt="logo">
+            </div>
+            <div class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="tips.html">Tips</a>
+                <a href="nosotros.html">Sobre Nosotros</a>
+                <a href="contacto.html">Contactanos</a>
+                <a href="sesion.html">Iniciar Sesión</a>
+            </div>
+        </div>
+        
+        <hr>
+
+        <div class="contenedor">
+            <div>
+                <p>Cocinando Ando @2025. All rights reserved</p>
+            </div>
+        </div>
+
+    </footer>
+    
+</body>
+
+</html>
